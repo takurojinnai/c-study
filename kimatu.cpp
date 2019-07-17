@@ -3,8 +3,8 @@
 #include<stdio.h>
 #include "stdafx.h"
 struct quizu {
-	int number;
-
+	
+	int x_1, a, b, c, d, e, f, g, h, i, j;
 };
 
 void File();
@@ -16,169 +16,167 @@ int main(void)
 
 	
 	
-	quizu x, a, b, c, d, e, f, g, h, i, j;
-
-	int x_1, a_1, b_1, c_1, d_1, e_1, f_1, g_1, h_1, i_1, j_1;
+	quizu number;
 
 	
 
-	a_1 = 0;
+	number.a = 0;
 	while (1) {
 		fprintf_s(stdout, "キリンの睡眠時間は？ 1:8時間、2:20時間、3:20分\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 3) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 3) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			a_1 = 1;
+			number.a = 1;
 			break;
 		}
 	}
 
 
-	b_1 = 0;
+	number.b = 0;
 	while (1) {
 		fprintf_s(stdout, "人間とバナナのDNAは何％一致するか？ 1:5％、2:20％、3:50％\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 3) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 3) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			b_1 = 1;
+			number.b = 1;
 			break;
 		}
 	}
 
-	c_1 = 0;
+	number.c = 0;
 	while (1) {
 		fprintf_s(stdout, "ミツバチが1匹が一生集められる蜜の量は？ 1:5グラム、2:500グラム、3:5キログラム\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 1) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 1) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			c_1 = 1;
+			number.c = 1;
 			break;
 		}
 	}
 
-	d_1 = 0;
+	number.d = 0;
 	while (1) {
 		fprintf_s(stdout, "アンパンマンの中身は？ 1:粒あん、2:こしあん、3:ジャムおじさん\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 1) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 1) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			d_1 = 1;
+			number.d = 1;
 			break;
 		}
 	}
 
-	e_1 = 0;
+	number.e = 0;
 	while (1) {
 		fprintf_s(stdout, "魚のタラはギリシャ語で何という？ 1:バカヤロウ、2:マヌケヤロウ、3:トンチンカン\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 1) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 1) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			e_1 = 1;
+			number.e = 1;
 			break;
 		}
 	}
 
-	f_1 = 0;
+	number.f = 0;
 	while (1) {
 		fprintf_s(stdout, "チゲ鍋のチゲはどういう意味？ 1:辛い、2:鍋、3:うまい\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 2) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 2) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			f_1 = 1;
+			number.f = 1;
 			break;
 		}
 	}
 
-	g_1 = 0;
+	number.g = 0;
 	while (1) {
 		fprintf_s(stdout, "スティーブン・スピルバーグの作品は？ 1:ジョーズ、2:E.T、3:ジュラシックパーク\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 3) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 3) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			g_1 = 1;
+			number.g = 1;
 			break;
 		}
 	}
 
-	h_1 = 0;
+	number.h = 0;
 	while (1) {
 		fprintf_s(stdout, "ちびまる子ちゃんのお姉ちゃんの名前は？ 1:すみれ、2:さきこ、3:こたけ\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 2) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 2) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			h_1 = 1;
+			number.h = 1;
 			break;
 		}
 	}
 
-	i_1 = 0;
+	number.i = 0;
 	while (1) {
 		fprintf_s(stdout, "マリオのオーバーオールは昔何色だったか？ 1:赤色、2:白色、3:緑色\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 1) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 1) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			i_1 = 1;
+			number.i = 1;
 			break;
 		}
 	}
 
-	j_1 = 0;
+	number.j = 0;
 	while (1) {
 		fprintf_s(stdout, "世界１売れたゲームとは？ 1:スーパーマリオブラザーズ、2:ポケットセンター、3:テトリス\n==>");
-		scanf_s("%d", &x_1);
-		if (x_1 == 3) {
+		scanf_s("%d", &number.x_1);
+		if (number.x_1 == 3) {
 			fprintf_s(stdout, "正解\n");
 			n++;
 			break;
 		}
 		else {
 			fprintf_s(stdout, "不正解\n");
-			j_1 = 1;
+			number.j = 1;
 			break;
 		}
 	}
