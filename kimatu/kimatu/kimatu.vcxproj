@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{78DEB92F-9035-47EF-B1E7-CEB74B61A022}</ProjectGuid>
+    <ProjectGuid>{F8E2B918-3D44-4F17-83AB-F8E7B0381610}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>kimatu</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
@@ -145,6 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="File.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
